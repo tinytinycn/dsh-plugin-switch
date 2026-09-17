@@ -58,21 +58,21 @@ ${BOLD}选项:${NC}
 
 ${BOLD}使用示例:${NC}
   # 1. 切换到本地开发版本 (在项目目录下直接运行)
-  cd ~/dsh-projects/agy-spaces/dsh-agy-link-dev
+  cd /path/to/your-plugin
   $0 local
 
   # 2. 切换到本地开发版本 (指定路径或项目名，并先 build)
-  $0 local ~/dsh-projects/agy-spaces/dsh-agy-link-dev --build
-  $0 local dsh-agy-link-dev
+  $0 local /path/to/your-plugin --build
+  $0 local your-plugin-name
 
   # 3. 切换回线上版本 (默认安装最新版 latest)
-  $0 online dsh-agy-link
+  $0 online your-plugin-name
 
   # 4. 切换回线上指定版本
-  $0 online dsh-agy-link -v 0.4.32
+  $0 online your-plugin-name -v 1.0.0
 
   # 5. 查看插件状态
-  $0 status dsh-agy-link
+  $0 status your-plugin-name
   $0 status
 
 EOF
